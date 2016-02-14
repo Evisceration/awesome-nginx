@@ -3,7 +3,7 @@
 	url = https://github.com/bagder/libbrotli.git
 [submodule "nginx-core"]
 	path = nginx-core
-	url = https://github.com/nginx/nginx
+	url = https://github.com/Evisceration/nginx-core.git
 [submodule "nginx-modules/ngx_http_auth_pam_module"]
 	path = nginx-modules/ngx_http_auth_pam_module
 	url = https://github.com/stogh/ngx_http_auth_pam_module.git
