@@ -1,0 +1,6 @@
+[submodule "libbrotli"]
+	path = libbrotli
+	url = https://github.com/bagder/libbrotli.git
+[submodule "ngx_brotli"]
+	path = ngx_brotli
+	url = https://github.com/google/ngx_brotli.git
