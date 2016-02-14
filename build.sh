@@ -57,6 +57,7 @@ cd ${CORE_DIR}
     --add-module=${MODULES_DIR}/nginx-upstream-fair \
     --add-module=${MODULES_DIR}/ngx_http_auth_pam_module \
     --add-module=${MODULES_DIR}/ngx_http_substitutions_filter_module \
+    --add-module=${MODULES_DIR}/ngx_brotli \
 
 echo ""
 echo "[+] Configuration done!"
