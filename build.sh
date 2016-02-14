@@ -1,12 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="$(pwd)"
-CORE_DIR="${BASE_DIR}/nginx-core"
-MODULES_DIR="${BASE_DIR}/nginx-modules"
-
-# -Wall already included, -0 optimization needs to be edited at ${CORE_DIR}/auto/cc/gcc
-CC_OPT="-Werror=format-security -fPIE -fstack-protector-strong -D_FORTIFY_SOURCE=2 -m64 -march=native"
-LD_OPT="-Wl,-Bsymbolic-functions -fPIE -pie -Wl,-z,relro -Wl,-z,now"
+source ./config.sh
 
 echo "============================"
 echo "MODULES_DIR: ${MODULES_DIR}"
@@ -71,3 +65,6 @@ echo ""
 make
 
 cd ${BASE_DIR}
+
+echo ""
+echo "[+] Done, you should run install.sh now"
